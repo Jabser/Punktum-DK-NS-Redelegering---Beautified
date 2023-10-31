@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --bg-main: #2D2E32;
+    --bg-dark: #25262A;
+    --text-color: #D9D9D9;
+    
+    --btn-text: #D9D9D9;
+    --btn-bg: #2D2E32;
+    --btn-text-hover: ;
+    --btn-bg-hover: #4D4D4D;
+    
+    --border: #4D4D4D;
+    --border-radius: 15px;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-color);
+    width: 800px;
+    max-width: 800px;
+    margin: 75px auto 0;
+}
+
+p {
+    display: none;
+}
+
+ul {
+    display: none;
+}
+
+pre {
+    white-space: normal;
+    display: none;
+}
+
+form {
+    padding: 35px;
+    background-color: var(--bg-dark);
+    border-radius: var(--border-radius);
+}
+
+input {
+    background-color: var(--bg-main);
+    box-shadow: none;
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+    padding: 10px 25px;
+    margin-top: 15px;
+    width: 100%;
+    transition: .3s;
+}
+
+input:focus {
+    border: 1px solid var(--border);
+    box-shadow: none !important;
+}
+
+input.nicebutton {
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: 1px solid var(--border);
+    width: 120px;
+    transition: .3s;
+}
+
+input.nicebutton:hover {
+    background-color: var(--btn-bg-hover);
+    color: var(--btn-text);
+    border: 1px solid var(--border);
+}
+
+a {
+    color: var(--text-color);
+}
